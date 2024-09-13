@@ -46,7 +46,7 @@ body{
     /* Light theme (default) */
     --primary-color: var(--color-primary);
 
-    --background-color:  var(--neutral-100);
+    --background-color:  var(--neutral-200);
     --text-color: var(--neutral-900);
 
     background-color: var(--background-color);
@@ -112,7 +112,9 @@ body:has(#theme-selector input[type="checkbox"]:checked){
     letter-spacing: .33px;
     transition: all 250ms ease-in;
     outline:.33px solid color-mix(in srgb, var(--btn-color) 15%, transparent); 
-    box-shadow: -6px -3px 8px #2f3134, 5px 2px 5px #060708, 4px 5px 12px  #212428, 7px 4px 4px #0a0b0c;
+}
+body:has(#theme-selector input[type="checkbox"]:checked) .gp-btn {
+    box-shadow: -6px -3px 8px #2f3134, 5px 2px 5px #060708, 4px 5px 12px  #212428, 7px 4px 4px #0a0b0c !important;
 }
 .gp-btn-primay{
     --btn-color: var(--primary-color)
@@ -145,7 +147,7 @@ header{
 .navbar-light .navbar-nav .nav-link.active{
     color: var(--color-primary) !important;
     z-index: 10;
-    box-shadow: -6px -3px 8px #2f3134, 5px 2px 5px #060708, 4px 5px 12px  #212428, 7px 4px 4px #0a0b0c;
+    /* box-shadow: -6px -3px 8px #2f3134, 5px 2px 5px #060708, 4px 5px 12px  #212428, 7px 4px 4px #0a0b0c; */
 }
 .navbar-light .navbar-nav .nav-link:focus{
     color: var(--text-color);
@@ -163,15 +165,18 @@ header{
 }
 
 body:has(#theme-selector input[type="checkbox"]:checked) .theme-shadow{
+    box-shadow: -6px -3px 8px #2f3134, 5px 2px 5px #060708, 4px 5px 12px  #212428, 7px 4px 4px #0a0b0c !important;
+}
+body:has(#theme-selector input[type="checkbox"]:checked) .navbar-light .navbar-nav .nav-link.active{
     box-shadow: -6px -3px 8px #2f3134, 5px 2px 5px #060708, 4px 5px 12px  #212428, 7px 4px 4px #0a0b0c;
 }
 .shadow-2 {
     box-shadow: 0 4px 10px #00000008, 0 0 2px #0000000f, 0 2px 6px #0000001f !important;
 }
-.shadow-4 {
+.shadow-4{
     box-shadow: 0 1px 10px #0000001f, 0 4px 5px #00000024, 0 2px 4px -1px #0003 !important;
 }
-.shadow-6 {
+.shadow-6, .theme-shadow, .gp-btn {
     box-shadow: 0 3px 5px #0000000f, 0 7px 9px #0000001f, 0 20px 25px -8px #0000002e !important;
 }
 .shadow-8 {
@@ -207,4 +212,13 @@ body:has(#theme-selector input[type="checkbox"]:checked) .theme-shadow{
 }
 .footer-logo-box{
     background: #062c3c;
+}
+.handshake-connect{
+    width: 100%;
+    aspect-ratio: 16/12;
+}
+.connect-grid{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap:3rem
 }

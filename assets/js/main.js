@@ -1,6 +1,11 @@
-const { createApp } = Vue
+const { createApp } = Vue;
+import footer from '../../components/footer.js';
+
         
 createApp({
+    components: {
+        footer
+      },
   data() {
     return {
         block_3:null,
