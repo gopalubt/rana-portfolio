@@ -91,6 +91,7 @@ body:has(#theme-selector input[type="checkbox"]:checked){
 .fs-normal{font-size: 20px; line-height: 135% ;}
     p{margin-bottom:0}
 .fc-primary{color:var( --primary-color) !important}
+.fc-offwhite{color:var(--neutral-500) !important}
 .secondary-heading{
     font-size: 16px;
     letter-spacing: 1.25px;
@@ -130,6 +131,12 @@ body:has(#theme-selector input[type="checkbox"]:checked) .gp-btn {
     margin:3rem 0 0;
     background-color: #000000;
 }
+a:not(:hover){
+    text-decoration: none;
+    color:var(--text-color)
+}
+a:hover{color:var(--color-primary)}
+
 header{
     position: sticky;
     position: -webkit-sticky;
@@ -219,6 +226,32 @@ body:has(#theme-selector input[type="checkbox"]:checked) .navbar-light .navbar-n
 }
 .connect-grid{
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap:3rem
+    grid-template-columns: 1fr;
+    gap:1.5rem;
+    @media (min-width: 768px){
+        grid-template-columns: 3fr 4fr;
+        gap:2rem;
+    }
+    @media (min-width: 992px){
+        grid-template-columns: 1fr 2fr;
+        gap:3rem;
+    }
+}
+.social-connect li{
+    background-color: transparent;
+    border: .33px solid !important;
+    border-top-width:.33px;
+    transition:all 300ms ease-in;
+    border-radius: 4px;
+}
+.social-connect li:hover{
+    border-color:var(--color-primary) !important;
+}
+.social-connect li:hover a{
+    color:var(--color-primary);
+}
+.form-label{
+    font-size: 14px;
+    color:var(--text-color);
+    text-transform: uppercase;
 }
