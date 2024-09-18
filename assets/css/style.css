@@ -92,6 +92,7 @@ body:has(#theme-selector input[type="checkbox"]:checked){
     p{margin-bottom:0}
 .fc-primary{color:var( --primary-color) !important}
 .fc-offwhite{color:var(--neutral-500) !important}
+.fw-semibold{font-weight:500 !important}
 .secondary-heading{
     font-size: 16px;
     letter-spacing: 1.25px;

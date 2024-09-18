@@ -1,29 +1,29 @@
-const { createApp } = Vue;
-import footer from '../../components/footer.js';
+// app.js
+import { createApp } from 'vue';
+import footerComponent from './components/footer-component.js';
 
-        
 createApp({
-    components: {
-        footer
-      },
+  components: {
+    footerComponent: footerComponent // Registering the imported footer component
+  },
   data() {
     return {
-        block_3:null,
+      block_3: null,
       message: 'Footer'
-    }
+    };
   },
   methods: {
-    loadBlock3: function(){
-        this.block_3 = {
-            block:"block_3",
-            heading:"My Resume",
-            subHeading: '2+ Years of experience',
-            conent:'',
-            media:''
-        }
+    loadBlock3() {
+      this.block_3 = {
+        block: "block_3",
+        heading: "My Resume",
+        subHeading: '2+ Years of experience',
+        content: '',
+        media: ''
+      };
     }
   },
-  created(){
-    this.loadBlock3()
+  created() {
+    this.loadBlock3();
   }
-}).mount('#app')
+}).mount('#app');
