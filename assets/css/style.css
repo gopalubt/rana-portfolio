@@ -256,11 +256,10 @@ body:has(#theme-selector input[type="checkbox"]:checked) .navbar-light .navbar-n
     color:var(--text-color);
     text-transform: uppercase;
 }
+@media (min-width:678px){
 .price-features{
-    @media (min-width:678px){
         column-count: 2;
     } 
-
 }
 .price-features li {
     margin-bottom:.5rem;
