@@ -118,14 +118,14 @@ body:has(#theme-selector input[type="checkbox"]:checked){
 body:has(#theme-selector input[type="checkbox"]:checked) .gp-btn {
     box-shadow: -6px -3px 8px #2f3134, 5px 2px 5px #060708, 4px 5px 12px  #212428, 7px 4px 4px #0a0b0c !important;
 }
-.gp-btn-primay{
+.gp-btn-primary{
     --btn-color: var(--primary-color)
 }
-.gp-btn-primay:hover{
+.gp-btn-primary:hover{
     --btn-bgcolor:var(--primary-color);
     --btn-color: var(--bg-background);
 }
-.gp-btn-primay:active{
+.gp-btn-primary:active{
     --btn-bgcolor:color-mix(in srgb, var(--primary-color) 60%, #333 60%);
 }
 .divider{
@@ -202,7 +202,7 @@ body:has(#theme-selector input[type="checkbox"]:checked) .navbar-light .navbar-n
 #theme-selector input[type="checkbox"]:checked .shadow-8 {
     box-shadow: 0 9px 46px 8px #0000001f, 0 24px 38px 3px #00000024, 0 11px 15px #0003 !important;
 }
-.features-grid, .portfolio-grid {
+.features-grid, .portfolio-grid, .blog-grid{
     display: grid;
     grid-template-columns: 1fr;
     gap: 1.5rem;
@@ -256,3 +256,15 @@ body:has(#theme-selector input[type="checkbox"]:checked) .navbar-light .navbar-n
     color:var(--text-color);
     text-transform: uppercase;
 }
+.price-features{
+    @media (min-width:678px){
+        column-count: 2;
+    } 
+
+}
+.price-features li {
+    margin-bottom:.5rem;
+    display: flex;
+    text-transform: capitalize;
+}
+i{ list-style: 1;}
