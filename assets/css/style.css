@@ -114,6 +114,9 @@ body:has(#theme-selector input[type="checkbox"]:checked){
     letter-spacing: .33px;
     transition: all 250ms ease-in;
     outline:.33px solid color-mix(in srgb, var(--btn-color) 15%, transparent); 
+    @media (min-width: 992px) {
+        padding: 1rem 1.5rem;
+    }
 }
 body:has(#theme-selector input[type="checkbox"]:checked) .gp-btn {
     box-shadow: -6px -3px 8px #2f3134, 5px 2px 5px #060708, 4px 5px 12px  #212428, 7px 4px 4px #0a0b0c !important;
@@ -256,7 +259,7 @@ body:has(#theme-selector input[type="checkbox"]:checked) .navbar-light .navbar-n
     color:var(--text-color);
     text-transform: uppercase;
 }
-@media (min-width:678px){
+@media (min-width:480px){
 .price-features{
         column-count: 2;
     } 
@@ -267,3 +270,62 @@ body:has(#theme-selector input[type="checkbox"]:checked) .navbar-light .navbar-n
     text-transform: capitalize;
 }
 i{ list-style: 1;}
+.client-grid-wrapper .item{
+    width:13rem;
+    border-radius: 8px;
+}
+.client-logo-box{
+    width:100%;
+    aspect-ratio: 16/15;
+    padding:.5rem;
+}
+.client-logo-box img{
+    width: 60%;
+    border-radius: 3px;
+}
+.list-group-item.active, .list-group-item.active:hover, .nav-pills .nav-link.active, .nav-pills .nav-link:hover, .nav-pills .show>.nav-link {
+    z-index: 2;
+    color: var(--color-primary);
+    background-color: var(--bg-background);
+    border-color: var(--color-primary);
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+    border-width: 1px solid;
+}
+.resume-list-group{
+    --item-spacing: 2rem;
+    padding-left:var(--item-spacing);
+    display: flex;
+    gap: 1.5rem;
+    flex-direction: column;
+    border-left: 2px solid var(--neutral-500);
+}
+.resume-list-item{
+    width: max(60%, 300px);
+    border:.66px solid var(--neutral-800);
+    border-radius: 2.66px;
+}
+.resume-list-item::before, .resume-list-item::after{
+    position: absolute;
+    content: '';
+    top:1.75rem;
+    
+}
+.resume-list-item::before{
+    left: calc(var(--item-spacing)*-1);
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    border: 2px solid var(--neutral-500);
+    z-index: 2;
+    background: var(--bg-background);  
+    transform: translate(-7px, -50%); 
+}
+.resume-list-item::after{
+    left: calc(var(--item-spacing)*-1);
+    height: 1.66px;
+    right: 100%;
+    background-color: var(--neutral-500);
+    transform: translate(0%, -50%);
+    z-index: 1;
+}
