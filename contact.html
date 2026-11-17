@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | RanaGopal</title>
+  <meta name="description" content="Contact RanaGopal for a quote on web applications, workflow software, integrations or a website. Email, phone, WhatsApp or the enquiry form.">
+  <link rel="canonical" href="https://gopalubt.github.io/rana-portfolio/contact.html">
+  <meta name="theme-color" content="#1b1e22">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="RanaGopal">
+  <meta property="og:title" content="Contact | RanaGopal">
+  <meta property="og:description" content="Contact RanaGopal for a quote on web applications, workflow software, integrations or a website. Email, phone, WhatsApp or the enquiry form.">
+  <meta property="og:url" content="https://gopalubt.github.io/rana-portfolio/contact.html">
+  <meta property="og:image" content="https://gopalubt.github.io/rana-portfolio/assets/images/profile.jpg">
+  <link rel="icon" type="image/png" href="assets/images/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script>try{var t=localStorage.getItem("theme");if(t==="light"||t==="dark")document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main">
+      <a class="brand" href="index.html" aria-label="RanaGopal home">
+        <img src="assets/images/logo.png" alt="RanaGopal" width="120" height="53">
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="work.html">Work</a></li>
+        <li><a href="contact.html" class="active" aria-current="page">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a class="btn btn-primary btn-sm nav-cta" href="contact.html">Get a quote</a>
+        <button class="icon-btn" id="theme-toggle" type="button" aria-label="Switch to light theme"><i class="bi bi-sun-fill" aria-hidden="true"></i></button>
+        <button class="icon-btn menu-btn" id="menu-btn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links"><i class="bi bi-list" aria-hidden="true"></i></button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+  <section class="page-hero">
+    <div class="container">
+      <p class="eyebrow">Contact</p>
+      <h1>Let's talk about your project</h1>
+      <p class="lead">Send an enquiry or reach out directly. Replies usually within a working day.</p>
+    </div>
+  </section>
+
+    <section class="section">
+      <div class="container contact-grid">
+        <div class="card contact-info reveal">
+          <h3>RanaGopal</h3>
+          <p class="muted">Web applications &amp; business software · Noida, India</p>
+          <ul class="contact-list">
+            <li><i class="bi bi-envelope" aria-hidden="true"></i><a href="mailto:ranagopal29@gmail.com">ranagopal29@gmail.com</a></li>
+            <li><i class="bi bi-telephone" aria-hidden="true"></i><a href="tel:+918889705044">+91 88897 05044</a></li>
+            <li><i class="bi bi-whatsapp" aria-hidden="true"></i><a href="https://api.whatsapp.com/send?phone=918889705044" target="_blank" rel="noopener noreferrer">Chat on WhatsApp</a></li>
+            <li><i class="bi bi-geo-alt" aria-hidden="true"></i><span>Noida, India</span></li>
+          </ul>
+          <ul class="social">
+            <li><a href="https://www.linkedin.com/in/gopal-rana-820a4862" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a></li>
+            <li><a href="https://github.com/gopalubt" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="bi bi-github"></i></a></li>
+          </ul>
+        </div>
+
+        <div class="card reveal">
+          <form id="enquiry" novalidate>
+            <div class="field"><label for="inputname">Name <span class="req">*</span></label><input type="text" id="inputname" name="name" autocomplete="name" required></div>
+            <div class="field"><label for="inputEmail">Email <span class="req">*</span></label><input type="email" id="inputEmail" name="email" autocomplete="email" required></div>
+            <div class="field"><label for="inputphone">Phone number <span class="req">*</span></label><input type="tel" id="inputphone" name="mobile" autocomplete="tel" required></div>
+            <div class="field"><label for="inputSubject">Subject</label><input type="text" id="inputSubject" name="subject"></div>
+            <div class="field"><label for="message">Your message</label><textarea id="message" name="message" rows="4"></textarea></div>
+            <button type="submit" class="btn btn-primary btn-block" id="submit-btn"><span class="btn-label">Send message</span> <i class="bi bi-arrow-right" aria-hidden="true"></i></button>
+            <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <img src="assets/images/logo.png" alt="RanaGopal" width="120" height="53" class="footer-logo">
+        <p class="muted">Custom web applications, business workflow software and integrations, built with Angular, Node.js and SQL.</p>
+      </div>
+      <div>
+        <h4>Pages</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="work.html">Work</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Get in touch</h4>
+        <ul class="footer-links">
+          <li><a href="mailto:ranagopal29@gmail.com">ranagopal29@gmail.com</a></li>
+          <li><a href="tel:+918889705044">+91 88897 05044</a></li>
+          <li>Noida, India</li>
+        </ul>
+        <ul class="social">
+          <li><a href="https://www.linkedin.com/in/gopal-rana-820a4862" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a></li>
+          <li><a href="https://github.com/gopalubt" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="bi bi-github"></i></a></li>
+          <li><a href="https://api.whatsapp.com/send?phone=918889705044" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p class="fine">&copy; <span id="year">2026</span> RanaGopal. All rights reserved.</p>
+      <ul class="footer-links inline">
+        <li><a href="public/privacy.html">Privacy</a></li>
+        <li><a href="public/terms.html">Terms &amp; Conditions</a></li>
+      </ul>
+    </div>
+  </footer>
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
